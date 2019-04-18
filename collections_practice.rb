@@ -51,9 +51,12 @@ def sum_array(array)
 end
 
 def add_s(array)
-  x = ()
-  while x < 3
-    string << "s"
-    x += 1
+  x = 0
+  while x < array.length
+    if x != 1
+      array[x] << "s"
+    end
+      x += 1
   end
+  return array
 end
