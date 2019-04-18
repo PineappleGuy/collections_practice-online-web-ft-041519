@@ -32,7 +32,9 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-
+  array.collect do |string|
+    string[2] = "$"
+  end
 end
 
 def find_a(array)
@@ -48,13 +50,9 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.rotate!(2)
-  x = 0
-  array.collect do |string|
-    while x < 3
+  x = ()
+  while x < 3
     string << "s"
     x += 1
   end
-end
-array.rotate!(2)
 end
