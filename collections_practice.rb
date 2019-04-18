@@ -50,8 +50,8 @@ end
 def add_s(array)
   array.rotate!(2)
   x = 0
-  while x < 3
   array.collect do |string|
+    while x < 3
     string << "s"
     x += 1
   end
