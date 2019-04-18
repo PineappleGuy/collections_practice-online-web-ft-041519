@@ -48,7 +48,13 @@ def sum_array(array)
 end
 
 def add_s(array)
+  array.rotate!(2)
+  x = 0
+  while x
   array.collect do |string|
     string << "s"
+    x += 1
   end
+end
+array.rotate!(2)
 end
